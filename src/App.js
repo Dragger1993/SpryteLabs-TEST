@@ -13,7 +13,7 @@ function App() {
     //fetch("http://localhost:7000/api").then(res => res.text()).then(res => console.log(res))
     //console.log("RESPOSE WORKS")
     //console.log(Return)
-    axios.post("http://localhost:7000/api", formData).then(res => {
+    axios.post("https://rocky-lowlands-63719.herokuapp.com/api", formData).then(res => {
       alert("Hi " + formData.name + ",you were born on a " + res.data)
       console.log(res.data)
     })
